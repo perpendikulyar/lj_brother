@@ -1,0 +1,14 @@
+.report {
+  font-size: 14px;
+}
+
+.report__title {
+  font-weight: 500;
+}
+
+.report__container {
+  border-radius: 2px;
+  border: solid 1px #616161;
+  margin-top: 8px;
+  padding: 4px 16px;
+}

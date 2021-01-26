@@ -1,0 +1,17 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #616161;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+w .list-item__name {
+  font-weight: 700;
+}
+
+.list-item__value {
+  color: #e59a6f;
+}

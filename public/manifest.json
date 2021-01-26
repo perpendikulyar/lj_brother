@@ -1,9 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Extension Name",
+  "name": "LiveJournal Brother Tool",
   "version": "0.1",
-  "description": "Some Description",
+  "description": "Helps you to controll what's happend",
   "permissions": [
+    "activeTab", 
+    "declarativeContent"
   ],
   "background": {
     "scripts": ["static/js/background.js"]
@@ -11,15 +13,21 @@
   "content_scripts": [{
     "js": [ "static/js/content.js" ],
     "matches": [
-      "http://*.example.com/*", "https://*.example.com/*"
+      "http://*.livejournal.com/*", "https://*.livejournal.com/*"
     ]
   }],
   "icons": {
-    "192": "logo192.png"
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "browser_action": {
     "default_icon": {
-      "192": "logo192.png"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     },
     "default_title": "Popup",
     "default_popup": "popup.html"
